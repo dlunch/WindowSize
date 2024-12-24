@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <DalamudLibPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">D:\Work\Dalamud\bin\Release</DalamudLibPath>
+  </PropertyGroup>
+
+  <Import Project="$(DalamudLibPath)/targets/Dalamud.Plugin.targets"/>
+</Project>
